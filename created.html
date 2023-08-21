@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="created.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <title>My Creat</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+      <ul>
+          <li>
+              <img src="logo.png" alt="logo"/>
+          </li>
+          <li class="item-collapse">
+              <a href="index.html">Home</a>
+          </li>
+          <li class="item-collapse">
+              <a href="blog.html" class="active">My Project</a>
+          </li>
+          <li class="item-collapse">
+              <a href="created.html" >Created Blog</a>
+          </li>
+      </ul>
+        </div> 
+        <div class="nav-right item-collapse">
+          <a href="contact.html">Contact Me</a>
+        </div> 
+        <div class="nav-right" id="barsmenu">
+          <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="hamburger-nav-container" id="hamburger-nav-container">
+          <a href="index.html">Home</a>
+          <a href="blog.html">My Project</a>
+          <a href="created.html" class="hamburger-active">Created Blog</a>
+          <a href="contact.html">Contact</a>
+      </div>
+
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <div class="rating">
+            <button class="rating-button" onclick="allTesti()">All ratings</button>
+            <button class="rating-button" onclick="filterTesti(1)">
+                1 <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="rating-button" onclick="filterTesti(2)">
+                2 <i class="fa-solid fa-star"></i>
+            </button >
+            <button class="rating-button" onclick="filterTesti(3)">
+                3 <i class="fa-solid fa-star"></i>
+            </button>
+            <button class="rating-button" onclick="filterTesti(4)">
+                4 <i class="fa-solid fa-star"></i>
+            </button >
+            <button class="rating-button" onclick="filterTesti(5)">
+                5 <i class="fa-solid fa-star"></i>
+            </button>
+        </div>
+        <div class="testi-list" id="testimonial">
+            <div class="testi">
+                <img src="ansor.jpg" alt="">
+                <p class="quote">Keren banget jasanya!</p>
+                <p class="author">- Kamil</p>
+                <p class="rate">5 <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+            <div class="testi">
+                <img src="ansor.jpg" alt="">
+                <p class="quote">Keren lah pokoknya</p>
+                <p class="author">- Andre</p>
+                <p class="rate">5 <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+            <div class="testi">
+                <img src="ansor.jpg" alt="">
+                <p class="quote">Mantap sekali!</p>
+                <p class="author">- Sakti</p>
+                <p class="rate">3 <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+            <div class="testi">
+                <img src="ansor.jpg" alt="">
+                <p class="quote">Cukup</p>
+                <p class="author">- adnan</p>
+                <p class="rate">4 <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+            <div class="testi">
+                <img src="ansor.jpg" alt="">
+                <p class="quote">Biasa.</p>
+                <p class="author">- Ramazaky</p>
+                <p class="rate">2 <i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="created.js"></script>
+</body>
+</html>
